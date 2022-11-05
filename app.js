@@ -1,19 +1,9 @@
-const typeUser = 'admin'; // user,guest,bot
+let i = 0;
+const lastNumber = 10;
+let message = "";
 
-switch (typeUser) {
-    case 'admin':
-        console.log ('Вы администратор');
-        break;
-    case 'user':
-        console.log ('Вы пользователь');
-        break;
-    case 'guest':
-        console.log ('Вы гость');
-        break;
-    case 'bot':
-        console.log ('Вы бот');
-        break;
-    default:
-        console.log ('Неизвестный тип пользователя');
-        break;    
+while (++i <= lastNumber) {
+    message += '${i}, ';
 }
+
+console.log (message);
