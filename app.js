@@ -1,3 +1,19 @@
-const isAdmin = true;
+const typeUser = 'admin'; // user,guest,bot
 
-console.log('Добро пожаловать: ${isAdmin ? "Администратор" : "Пользователь"}');
+switch (typeUser) {
+    case 'admin':
+        console.log ('Вы администратор');
+        break;
+    case 'user':
+        console.log ('Вы пользователь');
+        break;
+    case 'guest':
+        console.log ('Вы гость');
+        break;
+    case 'bot':
+        console.log ('Вы бот');
+        break;
+    default:
+        console.log ('Неизвестный тип пользователя');
+        break;    
+}
